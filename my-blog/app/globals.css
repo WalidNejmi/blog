@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background: linear-gradient(96.34deg, #3300CC 0%, #3300FF 47.92%, #0F6EFF 100%);
+}
+
+nav {
+  background: linear-gradient(96.34deg, #3300CC 0%, #3300FF 47.92%, #0F6EFF 100%);
+  border-bottom: 2px solid rgb(32, 43, 121);
+}
