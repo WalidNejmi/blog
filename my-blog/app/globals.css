@@ -7,6 +7,9 @@
   color: rgba(0, 0, 0, 0.87);
 }
 
+html {
+  overflow-y: scroll;
+}
 html, body {
   height: 100%;
   margin: 0;
@@ -17,6 +20,7 @@ body {
   background: #f2f2f2;
   color: rgba(0, 0, 0, 0.87);
   font-family: "Poppins", sans-serif;
+
 }
 
 nav {

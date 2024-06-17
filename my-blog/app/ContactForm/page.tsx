@@ -93,7 +93,7 @@ export default function ContactForm() {
           label="Your job"
           placeholder="Your job"
           withAsterisk
-          size="md"
+          size="lg"
           autosize
           {...form.getInputProps("job")}
         />
@@ -101,7 +101,7 @@ export default function ContactForm() {
           label="Your email"
           placeholder="Your email"
           withAsterisk
-          size="md"
+          size="lg"
           autosize
           {...form.getInputProps("email")}
         />
@@ -112,7 +112,7 @@ export default function ContactForm() {
           size="md"
           {...form.getInputProps("age")}
           required
-          min={18}
+          min={12}
           max={99}
           allowNegative={false}
         />
