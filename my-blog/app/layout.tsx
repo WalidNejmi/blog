@@ -5,6 +5,8 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Logo from "./components/Logo";
 
+import { createTheme, MantineProvider } from "@mantine/core";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,8 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
-        <Navbar />
-        {children}</body>
+        <MantineProvider>
+          <Navbar />
+          {children}
+        </MantineProvider>
+      </body>
     </html>
   );
 }

@@ -2,12 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  background: #f2f2f2;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  background: linear-gradient(96.34deg, #3300CC 0%, #3300FF 47.92%, #0F6EFF 100%);
+  background: #f2f2f2;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Poppins", sans-serif;
 }
 
 nav {
   background: linear-gradient(96.34deg, #3300CC 0%, #3300FF 47.92%, #0F6EFF 100%);
   border-bottom: 2px solid rgb(32, 43, 121);
+  height: 8vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }

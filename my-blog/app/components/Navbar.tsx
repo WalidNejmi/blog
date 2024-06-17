@@ -1,26 +1,22 @@
+'use client'
+
 import Link from "next/link";
-import { FaYoutube, FaTwitter, FaGithub, FaLaptop } from "react-icons/fa";
+import { FaYoutube, FaLinkedin, FaGithub, FaLaptop } from "react-icons/fa";
 import Logo from "./Logo";
 
 export default function Navbar() {
-  const iconClass = "text-white/90 hover:text-white";
+  const iconClass = "text-white/90 hover:text-white hover:opacity-80 transition duration-300 ease-in-out";
   return (
-    <nav className="bg-slate-600 sticky top-0 drop-shadow-xl">
-      <div className="prose prose-xl mx-auto flex justify-between sm:flex-row">
-        <h1 className="text-3xl font-bold text-white grid place-content-center mb-2 md:mb-0">
-          <Logo />
-        </h1>
-        <div className="flex flex-row justify-center items-center sm:justify-evenly gap-4 text-white text-4xl lg:text-5xl">
-          <Link className={iconClass} href="">
-            <FaYoutube />
-          </Link>
-          <Link className={iconClass} href="">
-            <FaGithub />
-          </Link>
-          <Link className={iconClass} href="">
-            <FaTwitter />
-          </Link>
-        </div>
+    // Add the sticky proprety or not
+    <nav className="top-0 drop-shadow-xl"> 
+      <Logo />
+      <div className="flex flex-row justify-center items-center sm:justify-evenly gap-4 text-white text-xs lg:text-xl">
+        <Link className={iconClass} href="https://www.linkedin.com/company/homebasedao/" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin />
+        </Link>
+        <Link className={iconClass} href="./ContactForm">
+          Contact Us
+        </Link>
       </div>
     </nav>
   );
